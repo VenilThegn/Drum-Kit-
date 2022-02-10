@@ -8,9 +8,11 @@ for (var i = 0; i < document.querySelectorAll(".drum").length; i++)
 
 }
 
-window.addEventListener('keydown', function(eve) {
+window.addEventListener('keydown', callbk);
+function callbk(eve)
+{
   sound(eve.key);
-});
+}
 
 function sound(key) {
   switch (key) {
