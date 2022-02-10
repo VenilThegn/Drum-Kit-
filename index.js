@@ -4,6 +4,7 @@ for (var i = 0; i < document.querySelectorAll(".drum").length; i++)
   document.querySelectorAll(".drum")[i].addEventListener("click", function() {
     var buttonHTML = this.innerHTML;
     sound(buttonHTML);
+    animation(buttonHTML);
   });
 
 }
@@ -12,6 +13,7 @@ window.addEventListener('keydown', callbk);
 function callbk(eve)
 {
   sound(eve.key);
+  animation(eve.key);
 }
 
 function sound(key) {
@@ -52,4 +54,13 @@ function sound(key) {
 
 
   }
+}
+
+function animation(animeKey)
+{
+  var pressKey = document.querySelector("."+animeKey);
+pressKey.classList.add("pressed");
+setTimeout(function(){
+  pressKey.classList.remove("pressed");
+}, 100);
 }
