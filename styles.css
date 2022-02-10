@@ -44,6 +44,11 @@ background: url('images/crash.png') no-repeat top left;
 background: url('images/kick.png') no-repeat top left;
 }
 
+.c {
+background: url('images/happycat.jpg') no-repeat top left;
+Background-size: 190px auto;
+}
+
 .set {
   margin: 10% auto;
 }
