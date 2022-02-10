@@ -8,7 +8,6 @@ h1 {
   color: #DBEDF3;
   font-family: "Arvo", cursive;
   text-shadow: 3px 0 #DA0463;
-
 }
 
 footer {
@@ -17,36 +16,36 @@ footer {
 }
 
 .w {
-background: url('images/tom1.png') no-repeat top left;
+  background: url('images/tom1.png') no-repeat top left;
 }
 
 .a {
-background: url('images/tom2.png') no-repeat top left;
+  background: url('images/tom2.png') no-repeat top left;
 }
 
 .s {
-background: url('images/tom3.png') no-repeat top left;
+  background: url('images/tom3.png') no-repeat top left;
 }
 
 .d {
-background: url('images/tom4.png') no-repeat top left;
+  background: url('images/tom4.png') no-repeat top left;
 }
 
 .j {
-background: url('images/snare.png') no-repeat top left;
+  background: url('images/snare.png') no-repeat top left;
 }
 
 .k {
-background: url('images/crash.png') no-repeat top left;
+  background: url('images/crash.png') no-repeat top left;
 }
 
 .l {
-background: url('images/kick.png') no-repeat top left;
+  background: url('images/kick.png') no-repeat top left;
 }
 
 .c {
-background: url('images/happycat.jpg') no-repeat top left;
-Background-size: 190px auto;
+  background: url('images/happycat.jpg') no-repeat top left;
+  Background-size: 190px auto;
 }
 
 .set {
