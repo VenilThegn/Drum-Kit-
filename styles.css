@@ -1,3 +1,13 @@
+.kittle{
+  position: absolute;
+  top: 140px;
+  right: 80px;
+  font-size: 3rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+}
+
 body {
   text-align: center;
   background-color: #283149;
