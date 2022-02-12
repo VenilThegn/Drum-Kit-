@@ -1,5 +1,5 @@
 document.querySelector(".instruction").addEventListener("click", function() {
-  alert("Blue means Right alphabet is right place.     yelow means right alphabet in wrong place.  No change means wrong alphabet. ")
+  alert("Blue means Right alphabet is right place.\nyelow means right alphabet in wrong place.  \nNo change means wrong alphabet. ")
 })
 for (var i = 0; i < document.querySelectorAll(".alpha").length; i++)
 
