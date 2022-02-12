@@ -7,7 +7,7 @@ for (var i = 0; i < document.querySelectorAll(".alpha").length; i++)
   var k = 0;
   var j = 1;
   var res;
-  var right = "siare";
+  var right = "smart";
   document.querySelectorAll(".alpha")[i].addEventListener("click", function() {
     var press = this.innerHTML;
     check(press)
