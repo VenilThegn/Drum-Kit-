@@ -1,13 +1,23 @@
+
 document.querySelector(".instruction").addEventListener("click", function() {
-  alert("Blue means Right alphabet is right place.\n yelow means right alphabet in wrong place.\n No change means wrong alphabet. ")
+  alert("Colour changes in the alphabets after entering a word indicates:\nBlue->The alphabet you have entered is correct and is in the right position.\nYellow->The alphabet you have entered is correct but not in the right position\nNo change-> The alphabet is not present in the word.");
 })
+var words = new Array("abode", "chase", "cabin", "satin", "light", "flake", "quail");
+var n =Math.floor(Math.random()*7);
+
+var right =words[n];
+
+n++;
+console.log(right);
 for (var i = 0; i < document.querySelectorAll(".alpha").length; i++)
 
 {
   var k = 0;
   var j = 1;
   var res;
-  var right = "smart";
+
+
+
   document.querySelectorAll(".alpha")[i].addEventListener("click", function() {
     var press = this.innerHTML;
     check(press)
@@ -26,16 +36,18 @@ check(eve.key);
 
 
 function check(pressed) {
-  if (pressed == "Backspace") {
+  if ((pressed == "Backspace")&&(k>0)) {
     k--;
     document.querySelectorAll(".try"+j)[k].innerHTML = " ";
 
 
-  } else if (pressed === "Enter") {
+  } else if ((pressed === "Enter")&&(k==5)) {
     if (j <= 5) {
       res = colour(right);
+      console.log(res);
       if (res == 5) {
-        alert("you won")
+        alert("congratulations you won. Come back tomorrow for a new word");
+        window.location.reload();
       }
       j++;
       k = 0;
@@ -46,7 +58,7 @@ function check(pressed) {
     } else {
       alert("game over . The right answer is " + right);
     }
-  } else {
+  } else if((pressed>="a")&&(pressed<="z")) {
     document.querySelectorAll(".try" + j)[k].innerHTML = pressed;
     k++;
   }
