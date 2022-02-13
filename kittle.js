@@ -8,7 +8,7 @@ var n =Math.floor(Math.random()*7);
 var right =words[n];
 
 n++;
-console.log(right);
+
 for (var i = 0; i < document.querySelectorAll(".alpha").length; i++)
 
 {
