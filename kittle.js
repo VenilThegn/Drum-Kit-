@@ -46,17 +46,17 @@ function check(pressed) {
       res = colour(right);
       console.log(res);
       if (res == 5) {
-        alert("congratulations you won. Come back tomorrow for a new word");
-        window.location.reload();
+        alert("congratulations you won in "+j+"/5 chances."+" You have 7 words to find. Keep refreshing ");
+        setTimeout(function(){window.location.reload()},4000);
       }
       j++;
       k = 0;
       console.log(".try"+j);
       if ((j == 6) && (res != 5)) {
         alert("game over . The right answer is " + right);
+        setTimeout(function(){window.location.reload()},1000);
       }
-    } else {
-      alert("game over . The right answer is " + right);
+
     }
   } else if((pressed>="a")&&(pressed<="z")) {
     document.querySelectorAll(".try" + j)[k].innerHTML = pressed;
