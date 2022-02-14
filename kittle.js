@@ -4,7 +4,7 @@ document.querySelector(".instruction").addEventListener("click", function() {
 })
 var words = new Array("abode", "chase", "cabin", "satin", "light", "flake", "quail");
 var n =Math.floor(Math.random()*7);
-
+// might, white, brave, crave, dream, steam, stare, flare, great, break, brake, trace, satin, haste, waste, eight, flake, poise, noise, voice, vocal, focal, focus, train, crate, sedan, paste, paint, faint, whale, shale, frail, grail, chain, quail, image, zebra, yacht, adopt, urban, eland, extra, hover, cover, lover
 var right =words[n];
 
 n++;
