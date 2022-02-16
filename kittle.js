@@ -1,6 +1,6 @@
 
 document.querySelector(".instruction").addEventListener("click", function() {
-  alert("Colour changes in the alphabets after entering a word indicates:\nBlue->The alphabet you have entered is correct and is in the right position.\nYellow->The alphabet you have entered is correct but not in the right position\nNo change-> The alphabet is not present in the word.");
+  alert("Colour changes in the alphabets after entering a word indicates:\nGreen->The alphabet you have entered is correct and is in the right position.\nYellow->The alphabet you have entered is correct but not in the right position\nNo change-> The alphabet is not present in the word.");
 })
 var words = new Array("abode", "chase", "cabin", "satin", "light", "flake", "quail");
 var n =Math.floor(Math.random()*7);
