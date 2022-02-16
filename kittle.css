@@ -12,8 +12,9 @@ body{
 
 
 }
+
 .container{
-  
+
   backdrop-filter:blur(5px);
   -webkit-backdrop-filter: blur(5px);
   webkit-filter: blur(5px);
@@ -38,6 +39,8 @@ body{
   text-align: center;
   margin: 7px;
   background-color: white;
+  font-family: "Arvo", cursive;
+
 }
 
 .Enter{
@@ -79,11 +82,13 @@ body{
   color: #DA0463;
   border-radius: 15px;
   display: inline-block;
-  width: 200px;
+  width: 220px;
   height: 50px;
   text-align: center;
   margin: 7px;
   background-color: white;
+  font-family: "Arvo", cursive;
+
 }
 .line {
   margin: 1% auto;
